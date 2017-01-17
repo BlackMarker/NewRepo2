@@ -14,10 +14,39 @@ Toteuta Pesukone-luokkaan muutamia erilaisia konstruktoreita ja alusta niit√§ k√
 using System;
 
 
-namespace vat2 {
-	class Program {
-		static void Main(string[] args) {
-			Console.WriteLine("Pesukone");
+namespace vat2
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			Console.WriteLine("***Pesukone***");
+			Console.WriteLine("Valitse Pesutavat:");
+			Console.WriteLine("0 -Lopeta\n1 -HienoPesu\n2 -Ei niin hieno pesu\n3 -Custom pesu");
+			int paatos = int.Parse(Console.ReadLine());
+
+			switch (paatos) {
+				case 0:
+					Console.WriteLine("Case 0");
+					break;
+				case 1:
+					Console.WriteLine("Case 2");
+
+					break;
+				case 2:
+					Console.WriteLine("Case 2");
+					break;
+				case 3:
+					Console.WriteLine("Case 3");
+					break;
+				default:
+					Console.WriteLine("Syote ei kelpaa");
+					break;
+			}
+
+		}
+		static void Hienopesu(){
+			PesukoneLuokka.Lampo = 50;
 		}
 	}
 }
