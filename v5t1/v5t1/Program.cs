@@ -6,6 +6,7 @@ jossa luot muutamia kulkuneuvoja (esim. auto ja moottoripyörä) renkaineen. Tie
 */
 
 using System;
+using System.Collections.Generic;
 
 namespace v5t1 {
 	class Program {
@@ -19,6 +20,7 @@ namespace v5t1 {
 			// create a car
 			Auto kaara = new Auto { Nimi = "Porsche", Malli = "911" };
 			Console.WriteLine("Luotu uusi pirssi {0} {1}", kaara.Nimi, kaara.Malli);
+			kaara.LisääRengas(tyre1);
 			kaara.LisääRengas(tyre1);
 			kaara.LisääRengas(tyre1);
 			kaara.LisääRengas(tyre1);
