@@ -9,7 +9,7 @@ namespace v7t1 {
 	public class Class1 {
 			public string Kysely(int haluttu) {
 				if (haluttu != 3) {
-					Console.WriteLine("Mita tallennetaan tiedostoon: ");
+					Console.WriteLine("Mita tallennetaan  tiedostoon: ");
 					string asia = Console.ReadLine();
 					return (asia);
 				}
