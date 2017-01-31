@@ -9,6 +9,14 @@ namespace Herjoittelua
     class Program
     {
         static void Main(string[] args){
+			try {
+				int luku = int.Parse(Console.ReadLine());
+				int luku2 = 100 / luku;
+			}
+			catch (Exception) {
+				Console.WriteLine("Ei toimi");
+			
+			}
 			string moi = ". . .";
 			string jee = Muokkaa(moi);
 			string pala = "Toimii 1";
