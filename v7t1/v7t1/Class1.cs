@@ -48,7 +48,7 @@ namespace v7t1 {
 							using (StreamWriter harpake = File.AppendText("Kirje.txt")) {
 								harpake.WriteLine(viesti);
 							}
-							Console.WriteLine("Tallennettiin peraan onnistuneesti");
+							Console.WriteLine("Tallennettiin tiedoston peraan onnistuneesti");
 							return 0;
 						}
 						catch (Exception) {
