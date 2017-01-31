@@ -16,14 +16,15 @@ namespace v7t1 {
 			//Valinta, tallennetaanko tideoston perään vai päälle
 			int haluttu = Valinta();
 			Console.WriteLine("Valitsit: " + haluttu);
-			//Kysely mitä tallennetaan
-			Kysely();
+			//Kysely mitä tallennetaan tiedostoon
+			string viesti = Kysely();
+			Tallennus(haluttu, viesti);
 		}
 
 		static string Kysely() {
 			Console.WriteLine("Mita tallennetaan tiedostoon: ");
 			string asia = Console.ReadLine();
-			return ("0");
+			return (asia);
 			
 
 		}
@@ -40,6 +41,23 @@ namespace v7t1 {
 				default:
 					Console.WriteLine("Syote ei kelpaa");
 					return (0);
+					break;
+			}
+		}
+
+		static int Tallennus(int haluttu, string viesti) {
+			switch (haluttu) {
+				case 1:
+					Console.WriteLine("Tallennettiin peraan onnistuneesti");
+					return 0;
+					break;
+				case 2:
+					Console.WriteLine("Tallennettiin paalle onnistuneesti");
+					return 0;
+					break;
+				default:
+					Console.WriteLine("Jotain tapahtui");
+					return 9;
 					break;
 			}
 		}
