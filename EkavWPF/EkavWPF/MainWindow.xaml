@@ -5,10 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EkavWPF"
         mc:Ignorable="d"
+        Closing="DataWindow_Closing"
         Title="JuusonAkkuna" Height="350" Width="525">
     <Grid>
-        <Button x:Name="infoButton" Content="ClickMe!" HorizontalAlignment="Left" Margin="220,88,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.529,0.711" Background="#FF00FFBA" AutomationProperties.HelpText="Paina Tasta" Click="Mun_Functio"/>
-        <TextBlock x:Name="infoTextBlock" HorizontalAlignment="Left" Margin="220,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Visibility="Visible"><Run Text="Jez Jez Toimii erinomaisesti"/><LineBreak/><Run Text="asdasd"/></TextBlock>
-
+        <StackPanel>
+            <StackPanel>                    
+                <Button x:Name="infoButton" Content="ClickMe!" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.529,0.711" Background="#FF00FFBA" AutomationProperties.HelpText="Paina Tasta" Click="Mun_Functio"/>
+                <TextBlock x:Name="infoTextBlock" HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Visibility="Visible"><Run Text="Jez Jez Toimii erinomaisesti"/><LineBreak/><Run Text="asdasd"/></TextBlock>
+                <Button x:Name="infoButton2" Content="ClickMe!" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.529,0.711" Background="#FF00FFBA" AutomationProperties.HelpText="Paina Tasta" Click="Mun_Functio"/>
+                <Button x:Name="infoButton3" Content="ClickMe!" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.529,0.711" Background="#FF00FFBA" AutomationProperties.HelpText="Paina Tasta" Click="Mun_Functio"/>
+            </StackPanel>
+            <StackPanel>
+                <Button x:Name="SuljeNappi" Content="Kill me! plz" Width="75" Height="25" Margin="221,10" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Tapa"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>

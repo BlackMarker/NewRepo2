@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.ComponentModel;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -24,6 +25,20 @@ namespace EkavWPF {
 
 		private void Mun_Functio(object sender, RoutedEventArgs e) {
 			infoTextBlock.Text = "Tamahan jopa toimii! :D";
+		}
+		void DataWindow_Closing(object sender, CancelEventArgs e) {
+			string teksti = infoTextBlock.Text;
+			if (teksti == "okei") {
+				e.Cancel = false;
+			}
+			else {
+				e.Cancel = true;
+				infoTextBlock.Text = "En sulkeudu";
+			}
+		}
+		void Tapa(object sender, RoutedEventArgs e) {
+			infoTextBlock.Text = "okei";
+			Close();
 		}
 	}
 }
