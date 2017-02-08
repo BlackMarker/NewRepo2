@@ -1,0 +1,16 @@
+﻿<Window x:Class="v9t1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:v9t1"
+        mc:Ignorable="d"
+        Title="AutoLaskuri" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="bAuto" Content="Auto" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="48,10,0,0" Height="150" Click="lisaaAuto" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="bRekka" Content="Rekka" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="313,11,0,0" Height="150" Click="lisaaRekka" FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="tAuto" HorizontalAlignment="Left" Height="23" Margin="62,185,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="114" FontSize="20" FontWeight="Bold" TextAlignment="Center" BorderThickness="0"/>
+        <TextBox x:Name="tRekka" HorizontalAlignment="Left" Height="23" Margin="327,185,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" FontSize="20" FontWeight="Bold" TextAlignment="Center" BorderThickness="0"/>
+
+    </Grid>
+</Window>
