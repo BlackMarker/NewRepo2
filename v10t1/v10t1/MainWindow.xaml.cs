@@ -24,16 +24,34 @@ namespace v10t1 {
 		}
 
 		private void button_Click(object sender, RoutedEventArgs e) {
-
+			//luodaan objecti "control" --> käy jokaunen control a:n lapsista läpi
 			foreach (object control in a.Children) {
+				//tarkistetaan onko control (mitä käsitellään checkBoxi)
 				if (control is CheckBox) {
 					CheckBox checBox = (CheckBox)control;
+					//jos on, esineet = esineet + ceckboxin sisältö
 					if ((bool)checBox.IsChecked) items += checBox.Content + " ";
 
 				}
 			}
+			foreach (object control in b.Children) {
+				//tarkistetaan onko control (mitä käsitellään checkBoxi)
+				if (control is CheckBox) {
+					CheckBox checBox = (CheckBox)control;
+					//jos on, esineet = esineet + ceckboxin sisältö
+					if ((bool)checBox.IsChecked) items += checBox.Content + " ";
+
+				}
+			}
+			//Lopuksi tulostetaan teksitkentään esineet
 			txtBox.Text = items;
 			
+		}
+
+		private void button2_Click(object sender, RoutedEventArgs e) {
+			//Mahdollisuus tyhjentää esineet
+			items = "";
+			txtBox.Text = "";
 		}
 	}
 }
