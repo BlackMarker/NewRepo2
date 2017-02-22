@@ -1,0 +1,42 @@
+﻿<Window x:Class="Laiva.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laiva"
+        mc:Ignorable="d"
+        Title="Laatikko" Height="400" Width="400" KeyDown="Window_KeyDown">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            
+        </Grid.RowDefinitions>
+        <Image Source="C:\Users\Jube\Source\Repos2\v2\Laiva\Laiva\pun.png" Width="32" Height="32" Grid.Column="{Binding Text, ElementName=textBlockx}" Grid.Row="{Binding Text, ElementName=textBlocky}"/>
+        <TextBlock x:Name="textBlocky" HorizontalAlignment="Left" Margin="44,31,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockx" HorizontalAlignment="Left" Margin="44,10,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Koord x:"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="0,31,0,0" TextWrapping="Wrap" Text="Koord Y:" VerticalAlignment="Top"/>
+    </Grid>
+
+</Window>
