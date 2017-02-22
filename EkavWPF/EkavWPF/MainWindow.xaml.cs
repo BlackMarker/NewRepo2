@@ -40,5 +40,11 @@ namespace EkavWPF {
 			infoTextBlock.Text = "okei";
 			Close();
 		}
+
+		private void Mun_Debuggaus(object sender, RoutedEventArgs e) {
+
+			System.Diagnostics.Debug.WriteLine("moi");
+			Console.WriteLine("Juuso osaa naa hommat");
+		}
 	}
 }
