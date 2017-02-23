@@ -33,6 +33,7 @@
             
         </Grid.RowDefinitions>
         <Image Source="C:\Users\Jube\Source\Repos2\v2\Laiva\Laiva\pun.png" Width="32" Height="32" Grid.Column="{Binding Text, ElementName=textBlockx}" Grid.Row="{Binding Text, ElementName=textBlocky}"/>
+        <Image Source="C:\Users\Jube\Source\Repos2\v2\Laiva\Laiva\ammo.png" Width="32" Height="32" Grid.Column="{Binding Source={x:Static local:Koordinaatit.xx}}" Grid.Row="{Binding Source={x:Static local:Koordinaatit.yy}}"/>
         <TextBlock x:Name="textBlocky" HorizontalAlignment="Left" Margin="44,31,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlockx" HorizontalAlignment="Left" Margin="44,10,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Koord x:"/><LineBreak/><Run/></TextBlock>

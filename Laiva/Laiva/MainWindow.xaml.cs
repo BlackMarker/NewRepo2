@@ -21,18 +21,25 @@ namespace Laiva {
 	public partial class MainWindow : Window {
 		public MainWindow() {
 			InitializeComponent();
-			Koordinaatit koord = new Koordinaatit();
-			koord.x = 2;
-			koord.y = 2;
+			Koordinaatit.xx = 3;
+			Koordinaatit.yy = 3;
+			textBlockx.Text = String.Format("" + Koordinaatit.xx);
+			
+			
 
 		}
 
 		private void Window_KeyDown(object sender, KeyEventArgs e) {
+			Koordinaatit.yy = 2;
+			Koordinaatit.xx = 2;
 			switch (e.Key) {
 				case Key.W:
 					int numero1 = int.Parse(textBlocky.Text);
 					numero1--;
 					Console.Beep(4000,100);
+					if (numero1 == 2) {
+						Console.Beep(2000, 100);
+					}
 					textBlocky.Text = String.Format("" + numero1);
 					break;
 				case Key.S:
@@ -61,7 +68,7 @@ namespace Laiva {
 	}
 
 	public class Koordinaatit {
-		public int x { get; set; }
-		public int y { get; set; }
+		public static int xx { get; set; }
+		public static int yy { get; set; }
 	}
 }
